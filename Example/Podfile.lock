@@ -1,0 +1,16 @@
+PODS:
+  - NJSisVideoList (0.1.0)
+
+DEPENDENCIES:
+  - NJSisVideoList (from `../`)
+
+EXTERNAL SOURCES:
+  NJSisVideoList:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NJSisVideoList: e6581dcb9e5b64cd263011f49a29421f24eed99a
+
+PODFILE CHECKSUM: e923b1da05dd5a6adadd148ed11939c4bb94df9e
+
+COCOAPODS: 1.5.3
