@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NJSisVideoList_Example' do
+  pod 'NJSisVideoList', :path => '../'
+
+  target 'NJSisVideoList_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
