@@ -11,7 +11,7 @@ import NJKit
     
     @objc func Action_mainViewController(params: [String: AnyObject]) -> UIViewController? {
         
-        let childController = NJSisVideoListController(tableViewStyle: .grouped)
+        let childController = NJSisVideoListController(tableViewStyle: .plain)
         let nav = NJNavigationController(rootViewController: childController)
         
         childController.tabBarItem.image = UIImage.nj_image(name: "tabBar_essence_icon", bundleClass: Target_NJSisVideoList.self)
