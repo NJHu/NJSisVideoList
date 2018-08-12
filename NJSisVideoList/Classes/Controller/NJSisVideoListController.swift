@@ -19,6 +19,9 @@ class NJSisVideoListController: NJRefreshTableViewController {
         self.nj_isBackActionBtnHidden = true
         self.title = "视频列表"
         self.tableView.separatorStyle = .none
+        var contentInset = self.tableView.contentInset
+        contentInset.bottom += (self.tabBarController?.tabBar.bounds.height ?? 0)
+        self.tableView.contentInset = contentInset
     }
     override func loadData(isMore: Bool) {
         
