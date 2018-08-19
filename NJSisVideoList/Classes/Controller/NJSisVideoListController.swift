@@ -54,7 +54,7 @@ extension NJSisVideoListController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let topic = sisVideoListViewModel.videoList[indexPath.row];
-        if let playVc = NJMediator.sharedMediator.Mediator_NJSisPlayPage_PlayController(video: topic.videoUrl, topicId: topic.id, videoSize: CGSize(width: topic.width, height: topic.height)) {
+        if let playVc = NJMediator.sharedMediator.Mediator_NJSisPlayPage_PlayController(jsonData: topic.jsonData) {
             self.navigationController?.pushViewController(playVc, animated: true)
         }
     }

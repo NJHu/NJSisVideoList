@@ -19,7 +19,9 @@ class NJSisTopic: NSObject {
     var text: String
     var id: String
     var cellHeight: Double = 0
+    var jsonData: JSON
     init(jsonData: JSON) {
+        self.jsonData = jsonData
         smallPicture = jsonData["image0"].stringValue
         middlePicture = jsonData["image2"].stringValue
         largePicture = jsonData["image1"].stringValue
