@@ -34,7 +34,7 @@ class NJSisVideoListController: NJRefreshTableViewController {
             }
             
             self?.tableView.reloadData()
-            self?.tableView.mj_footer.state = hasMore ? MJRefreshState.idle : MJRefreshState.noMoreData
+            self?.tableView.mj_footer?.state = hasMore ? MJRefreshState.idle : MJRefreshState.noMoreData
         }
     }
 }
